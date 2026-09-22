@@ -1,0 +1,24 @@
+{
+  "world_size": 2,
+  "rank": 0,
+  "steps": 120,
+  "sample_interval": 10,
+  "baseline_sec": 0.8311256752349436,
+  "profiled_sec": 0.8494204990565777,
+  "overhead_pct": 2.20121028224311,
+  "sampled_reports": 12,
+  "detection_smoke_ok": true,
+  "detection_detail": {
+    "forward_stragglers": [
+      1
+    ],
+    "forward_ratio": 1.9274137784538679,
+    "hints": [
+      "forward: rank1 8.16ms (mean 4.24ms, ratio 1.93x)",
+      "backward: rank0 31.06ms (mean 28.18ms, ratio 1.10x)",
+      "communication: rank0 6.69ms (mean 5.64ms, ratio 1.19x)",
+      "likely_bottleneck=forward"
+    ]
+  },
+  "pass_overhead_lt_0_5": false
+}
