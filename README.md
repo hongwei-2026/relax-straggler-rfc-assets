@@ -25,3 +25,11 @@ Raw: `overhead_result_heavy.json`, `overhead_result_light.json`.
 
 - **Is**: CUDA Event + interval sampling + cross-rank detect works; overhead can be <0.5% when step is not tiny.
 - **Is not**: Relax `train_one_step` hook; official recipe E2E A/B.
+
+
+## 2026-09-29 云机截图
+
+https://github.com/hongwei-2026/relax-straggler-rfc-assets/tree/master/evidence/2026-09-29
+
+4×RTX 6000D，基线 `99a0b6a`，挂点已接上，判定单测 `unit_ok`，单卡冒烟 `fwd_ms=116.311`。
+不是 recipe 开销验收。
