@@ -1,0 +1,12 @@
+{
+  "world_size": 4,
+  "gpus": ["NVIDIA RTX 6000D", "NVIDIA RTX 6000D", "NVIDIA RTX 6000D", "NVIDIA RTX 6000D"],
+  "steps": 40,
+  "repeats_per_step": 16,
+  "off_sec": 0.27790414402261376,
+  "on_sec": 0.28161391406320035,
+  "overhead_pct": 1.3349099394087183,
+  "fwd_ms_by_rank": [13.010687828063965, 13.171679973602295, 12.683072209358215, 32.6355836391449],
+  "alerts": [{"rank": 3, "reason": "slow_device"}],
+  "note": "synthetic matmul loop, not a Relax recipe. Step is only ~7ms, so the percentage is inflated. Absolute added time is about 3.7ms over 40 steps."
+}
