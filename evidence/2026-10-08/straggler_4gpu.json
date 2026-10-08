@@ -1,0 +1,46 @@
+{
+  "world_size": 4,
+  "gpus": [
+    "NVIDIA RTX 6000D",
+    "NVIDIA RTX 6000D",
+    "NVIDIA RTX 6000D",
+    "NVIDIA RTX 6000D"
+  ],
+  "steps": 40,
+  "repeats_per_step": 16,
+  "off_sec": 0.25898679066449404,
+  "on_sec": 0.2612567273899913,
+  "overhead_pct": 0.8764681471488052,
+  "fwd_ms_by_rank": [
+    12.75820803642273,
+    12.961919784545898,
+    12.896512031555176,
+    34.0133113861084
+  ],
+  "alerts": [
+    {
+      "rank": 3,
+      "reason": "slow_device"
+    }
+  ],
+  "metrics": {
+    "straggler/dropped_events": 0.0,
+    "straggler/fwd/median_ms": 12.929215908050537,
+    "straggler/fwd/max_ms": 34.0133113861084,
+    "straggler/fwd/max_rank": 3.0,
+    "straggler/fwd/spread": 1.6307327240880545,
+    "straggler/dp_grad_sync/median_ms": 28.478367924690247,
+    "straggler/dp_grad_sync/max_ms": 28.753984212875366,
+    "straggler/dp_grad_sync/max_rank": 0.0,
+    "straggler/dp_grad_sync/spread": 0.009678092821680417,
+    "straggler/self/median_ms": 12.929215908050537,
+    "straggler/self/max_ms": 34.0133113861084,
+    "straggler/self/max_rank": 3.0,
+    "straggler/tokens/median": 2048.0,
+    "straggler/tokens/max": 2048.0,
+    "straggler/tokens/spread": 0.0,
+    "straggler/flagged/count": 1.0,
+    "straggler/flagged/rank": 3.0
+  },
+  "note": "synthetic matmul loop, not a Relax recipe"
+}
