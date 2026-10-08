@@ -1,0 +1,1 @@
+event_smoke_ok fwd_ms 102.10208129882812 devices 4
