@@ -1,0 +1,34 @@
+{
+  "world_size": 4,
+  "gpus": [
+    "NVIDIA RTX 6000D",
+    "NVIDIA RTX 6000D",
+    "NVIDIA RTX 6000D",
+    "NVIDIA RTX 6000D"
+  ],
+  "pairs": [
+    {
+      "off_sec": 1.2105574011802673,
+      "on_sec": 1.1644290667027235,
+      "overhead_pct": -3.8105036929739726
+    },
+    {
+      "off_sec": 1.1224787486717105,
+      "on_sec": 1.1274724123068154,
+      "overhead_pct": 0.44487823408809885
+    },
+    {
+      "off_sec": 1.122224158141762,
+      "on_sec": 1.1227348390966654,
+      "overhead_pct": 0.04550614520266403
+    },
+    {
+      "off_sec": 1.122441302984953,
+      "on_sec": 1.1224810453131795,
+      "overhead_pct": 0.003540704366533729
+    }
+  ],
+  "median_overhead_pct": 0.02452342478459888,
+  "mean_overhead_pct": -0.829144652329169,
+  "note": "synthetic paired A/B, not a Relax recipe"
+}
